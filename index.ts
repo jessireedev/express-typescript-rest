@@ -1,5 +1,16 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
+import bunyan from 'bunyan'
+
+const log  = bunyan.createLogger({ 
+  name: "app", 
+  streams: [
+    {
+      level: 'info',
+      stream: process.stdout
+    }
+  ]
+})
 
 dotenv.config();
 
@@ -13,5 +24,5 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
+  log.info(`Server is running at https://localhost:${port}`);
 });
