@@ -4,5 +4,5 @@
 
 # Features
 
-[x] - Logging using [Bunyan](https://www.npmjs.com/package/bunyan)
-[ ] - Automated Testing
+- [x] Logging using [Bunyan](https://www.npmjs.com/package/bunyan)
+- [ ] Automated Testing
