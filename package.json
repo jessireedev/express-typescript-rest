@@ -1,15 +1,15 @@
 {
-  "name": "ts",
+  "name": "express-typescript-rest",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Boilerplate for simple Express REST API written in Typescript",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "node dist/server.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/server.js\""
   },
-  "author": "",
+  "author": "Jessiree @jessireedev",
   "license": "ISC",
   "dependencies": {
     "bunyan": "^1.8.15",
