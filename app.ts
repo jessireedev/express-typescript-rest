@@ -1,14 +1,11 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import dotenv from 'dotenv';
+import { routes } from './routes';
 
 dotenv.config();
 
 const app: Express = express();
 
-app.get('/', (req: Request, res: Response) => {
-  res.send({
-    "result": "ok"
-  });
-});
+app.use("/", routes)
 
 export default app
