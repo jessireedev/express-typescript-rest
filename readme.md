@@ -5,4 +5,4 @@
 # Features
 
 - [x] Logging using [Bunyan](https://www.npmjs.com/package/bunyan)
-- [ ] Automated Testing
+- [x] Automated Testing using [Jest](https://www.npmjs.com/package/jest) and [Supertest](https://www.npmjs.com/package/supertest)
