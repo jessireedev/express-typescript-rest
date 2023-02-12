@@ -9,4 +9,4 @@ const log  = bunyan.createLogger({
 
 app.listen(port, () => {
   log.info(`Server is running at https://localhost:${port}`);
-});
+})
